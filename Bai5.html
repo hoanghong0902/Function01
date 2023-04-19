@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+        var b = ['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+        var str = prompt('Nhập tên ngôi sao ');
+        function searchStart(str){
+            let i = a.indexOf(str);
+            if (i !== -1){
+                return b[i];
+            }
+            return 0;
+        }
+        if (searchStart(str) == 0){
+            alert("Không có ngôi sao này");
+        } else{
+            alert("Chòm sao của " + str + " là: " + searchStart(str));
+        }
+    </script>
+</body>
+</html>

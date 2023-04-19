@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <label>Enter a number: </label>
+        <input type="number" id="Number">
+        <input type="button" id="result" value="Submit" onclick="tangGT()">
+        <p id = "Result"></p>
+    <script>
+        function tangGT(){
+            let num = parseInt(document.getElementById('Number').value);
+            console.log(num);
+            let result = (num + 1);
+            console.log(result);
+            document.getElementById('Result').innerHTML = result;
+        }
+        
+    </script>
+</body>
+</html>
